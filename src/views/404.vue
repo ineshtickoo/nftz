@@ -17,7 +17,6 @@ button {
 	background: rgb(187, 104, 212);
 	color: #fff;
 	border: none;
-	font-family: 'raleway';
 }
 button:hover {
 	background: rgb(150, 79, 172);

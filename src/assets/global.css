@@ -6,8 +6,7 @@
 
 @font-face {
 	font-family: 'Lufga';
-	src: url('Lufga-Regular.woff2') format('woff2'),
-		url('Lufga-Regular.woff') format('woff');
+	src: url('Lufga-Regular.woff2') format('woff2'), url('Lufga-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -15,8 +14,7 @@
 
 @font-face {
 	font-family: 'Lufga';
-	src: url('Lufga-SemiBold.woff2') format('woff2'),
-		url('Lufga-SemiBold.woff') format('woff');
+	src: url('Lufga-SemiBold.woff2') format('woff2'), url('Lufga-SemiBold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -26,8 +24,7 @@
 	text-align: center;
 }
 
-h1,
-h2 {
+h1, h2 {
 	font-weight: 600;
 }
 
@@ -44,10 +41,7 @@ h2 {
 	background-color: #0553b9;
 }
 
-img,
-.noselect,
-button,
-br {
+img, .noselect, button, br {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -123,18 +117,15 @@ input {
 	margin: 0;
 }
 
-html,
-body {
+html, body {
 	height: 100%;
 }
 
-.fade-enter-active,
-.fade-leave-active {
+.fade-enter-active, .fade-leave-active {
 	transition: opacity 0.3s ease;
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.fade-enter-from, .fade-leave-to {
 	opacity: 0;
 }
 
@@ -151,10 +142,6 @@ footer.footer {
 
 .heart {
 	color: rgb(236, 85, 85);
-}
-
-input,
-textarea {
 }
 
 ::-moz-selection {
@@ -188,6 +175,11 @@ textarea {
 
 #nav a {
 	color: rgb(34, 34, 34);
+	transition: 0.2s;
+}
+
+#nav a:hover {
+	color: #80b1f0;
 }
 
 #nav a.router-link-exact-active {

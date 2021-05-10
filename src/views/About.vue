@@ -2,31 +2,8 @@
 	<div class="container">
 		<br class="nvm" />
 		<br />
-		<h2 class="center zero">NFTZ</h2>
-		<h5 class="center">NFTs Made Easy.</h5>
-		<br />
-		<!-- <div class="flex-center">
-			<div class="flexbruhh center">
-				<div class="boxcard">
-					<h4 class="zero" style="margin-top: 0.6em">Vaccines</h4>
-					<p>
-						Helping you manage the distribution of vaccines throughout the
-						country, so that you stay safe.
-					</p>
-				</div>
-				<div class="boxcard">
-					<h4>
-						<img src="@/assets/curapass.png" alt draggable="false" />
-					</h4>
-					<p>
-						A new way to
-						<b>explore</b>
-						during these difficult times.
-					</p>
-				</div>
-			</div>
-		</div> -->
-		<br />
+		<!-- <h2 class="center zero">NFTZ</h2>
+		<h5 class="center">NFTs Made Easy.</h5> -->
 		<br />
 		<br />
 		<br />
@@ -39,17 +16,9 @@
 					be still a daunting and technically challenging task.
 				</p>
 				<p>
-					To tackle both these problems, we present
-					<span><b>NFTZ</b></span>
-					<span>.</span>
-					NFTZ is a multi-currency multi-model wallet with abilities to create
-					NFTs on demand using images or other media.
-					<span>
-						<a href="https://cura.arhaanb.co/present" target="_blank">
-							<span>this page</span>
-						</a>
-					</span>
-					<span>.</span>
+					To tackle both these problems, we present <b>NFTZ</b>. NFTZ is a
+					multi-currency multi-model wallet with abilities to create NFTs on
+					demand using images or other media.
 				</p>
 			</div>
 			<div class="five columns">
@@ -86,10 +55,14 @@
 			</div>
 		</div>
 
+		<p class="center" id="weirdmock">
+			<img src="@/assets/appui-learnmore-2.png" alt="MOCKUP" />
+			<br /><br />
+		</p>
+
 		<div class="row" id="mobile-app">
 			<div class="seven columns">
 				<h3>Physical Hardware</h3>
-
 				<p>
 					We have used an RFID reader to implement a multi currency wallet,
 					which can be used to access the cryptocurrencies linked to the NFTs.
@@ -127,6 +100,7 @@
 				></iframe>
 			</div>
 		</div>
+		<br />
 		<br />
 		<br />
 		<br />
@@ -170,65 +144,13 @@
 				</div>
 			</div>
 		</div>
+		<div class="u-cf"></div>
+		<br />
+		<br />
 	</div>
 </template>
 
-<script>
-import axios from 'axios'
-export default {
-	data() {
-		return {
-			info: null,
-			loading: true,
-			date: false,
-			months: [
-				'january',
-				'february',
-				'march',
-				'april',
-				'may',
-				'june',
-				'july',
-				'august',
-				'september',
-				'october',
-				'november',
-				'december',
-			],
-		}
-	},
-	methods: {
-		cap(string) {
-			return string.charAt(0).toUpperCase() + string.slice(1)
-		},
-		commas(x) {
-			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-		},
-		superscr(x) {
-			const num = x.slice(-1)
-			var scr = ''
-			if (num == 1) {
-				scr = 'st'
-			} else if (num == 2) {
-				scr = 'nd'
-			} else if (num == 3) {
-				scr = 'rd'
-			} else {
-				scr = 'th'
-			}
-			return scr
-		},
-	},
-	async mounted() {
-		await axios.get('https://covid19.mathdro.id/api/').then((response) => {
-			this.info = response.data
-			console.log(response)
-		})
-		this.date = new Date(this.info.lastUpdate)
-		this.loading = false
-	},
-}
-</script>
+<script></script>
 
 <style scoped>
 .pages img {
@@ -284,6 +206,7 @@ export default {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	border-radius: 1em;
 }
 #whatisnft {
 	padding-bottom: 0;
@@ -379,9 +302,14 @@ a {
 		margin: 0;
 		margin-top: 2em;
 	}
-	.pages img {
-		display: none;
-	}
+}
+
+#weirdmock {
+	display: none;
+}
+
+#weirdmock img {
+	width: 100%;
 }
 
 @media (max-width: 750px) {
@@ -392,6 +320,15 @@ a {
 	#mobile-app {
 		transform: translateY(0);
 		margin-bottom: 2em;
+	}
+	#hardimg {
+		transform: translateY(0);
+	}
+	#secondmock {
+		display: none;
+	}
+	#weirdmock {
+		display: block;
 	}
 }
 </style>

@@ -5,12 +5,13 @@
 				<div class="moreresp five columns text">
 					<h1>NFTZ</h1>
 					<p>
-						NFTs made easy. A multi currency multi model wallet with abilities to create NFTs on demand using images as well as other media.
+						NFTs made easy. A multi currency multi model wallet with abilities
+						to create NFTs on demand using images as well as other media.
 					</p>
 					<div class="block noselect">
-						<a href="/Cura.apk" download="Cura">
-							<button>Download</button>
-						</a>
+						<!-- <a href="/Cura.apk" download="Cura"> -->
+						<button disabled>Download</button>
+						<!-- </a> -->
 						<router-link to="/about" class="more">
 							Learn more &rarr;
 						</router-link>
@@ -89,7 +90,7 @@ button {
 	border: none;
 }
 button:hover {
-	background: #0553B9;
+	background: #0553b9;
 	color: #fff;
 }
 button:active {
@@ -100,7 +101,7 @@ a {
 	text-decoration: none;
 }
 a:hover {
-	color: #0553B9;
+	color: #0553b9;
 }
 .more {
 	margin-left: 1.5em;
