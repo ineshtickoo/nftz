@@ -11,7 +11,7 @@
 		<div v-if="!submitted" class="top">
 			<form @submit.prevent="submit" class="five columns submitted">
 				<h2 class="zero">Register</h2>
-				<p>Stay safe with NFTZ.</p>
+				<p>Make an account with NFTZ.</p>
 				<div v-if="error">{{ error }}</div>
 
 				<label for="username">Username</label>
