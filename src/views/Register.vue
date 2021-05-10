@@ -2,7 +2,7 @@
 	<div class="container">
 		<div v-if="submitted" class="six columns submitted">
 			<h4>
-				Thank you for registering. You can continue on the Cura mobile app.
+				Thank you for registering.
 			</h4>
 			<a href="/Cura.apk" download="Cura">
 				<button>Download</button>
@@ -11,7 +11,7 @@
 		<div v-if="!submitted" class="top">
 			<form @submit.prevent="submit" class="five columns submitted">
 				<h2 class="zero">Register</h2>
-				<p>Stay safe with Cura.</p>
+				<p>Stay safe with NFTZ.</p>
 				<div v-if="error">{{ error }}</div>
 
 				<label for="username">Username</label>
@@ -38,7 +38,7 @@
 					v-model="form.password2"
 				/>
 
-				<label for="vaccinated">Have you been vaccinated?</label>
+				<label for="vaccinated">Have you downloaded the app?</label>
 				<div class="switchboc">
 					<label for>No</label>
 					<label class="switch">
