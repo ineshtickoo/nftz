@@ -170,7 +170,7 @@
 }
 #hardimg {
 	border-radius: 25px;
-	transform: translateY(-20%);
+	transform: translateY(-12%);
 }
 .flexbruhh {
 	display: flex;
